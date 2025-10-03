@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis recetas - Nutriweb</title>
+  <style>
+    body {
+      font-family: "Bookman Old Style", serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #E5FFF7; /* Fondo principal */
+    }
+
+    header {
+      padding: 40px;
+      background: none;
+    }
+
+    h1 {
+      color: #2f4f4f;
+      margin: 0;
+      font-size: 3em;
+    }
+
+    .recetas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1000px;
+      margin: 40px auto 0 auto;
+      padding: 20px;
+      background: #ffffff; /* Fondo blanco de las recetas */
+      border-radius: 15px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .bottom-image {
+      height: 400px; /* Ajusta la altura */
+      background-image: url("https://www.shutterstock.com/image-vector/culinary-background-restaurant-kitchen-poster-260nw-2533080097.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; /* Centrado de la imagen */
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mis recetas</h1>
+  </header>
+
+  <div class="recetas">
+    <div class="card">Receta 1</div>
+    <div class="card">Receta 2</div>
+    <div class="card">Receta 3</div>
+    <div class="card">Receta 4</div>
+    <div class="card">Receta 5</div>
+    <div class="card">Receta 6</div>
+    <div class="card">Receta 7</div>
+    <div class="card">Receta 8</div>
+    <div class="card">Receta 9</div>
+  </div>
+
+  <div class="bottom-image"></div>
+</body>
+</html>

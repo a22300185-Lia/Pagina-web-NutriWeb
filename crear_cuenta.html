@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear cuenta - Nutriweb</title>
+  <style>
+    body {
+      font-family: "Bookman Old Style", serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #D7FCD9; /* Fondo sólido */
+    }
+
+    .container {
+      display: flex;
+      background: #ffffff; /* Fondo blanco semi-transparente */
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+      overflow: hidden;
+      width: 900px;
+      max-width: 90%;
+    }
+
+    .form-section {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .form-section h1 {
+      font-size: 2.5em;
+      color: #2f4f4f;
+      margin-bottom: 30px;
+    }
+
+    .form-section input {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      font-family: "Bookman Old Style", serif;
+    }
+
+    .form-section button {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 95%;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      font-family: "Bookman Old Style", serif;
+    }
+
+    .form-section button:hover {
+      background-color: #3e9142;
+    }
+
+    .image-section {
+      flex: 1;
+      background-image: url("https://img.freepik.com/vector-premium/food-set-vector-collection-design-template_737924-9233.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column;
+      }
+      .image-section {
+        height: 250px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h1>¡Crea tu cuenta!</h1>
+      <input type="text" placeholder="Nombre">
+      <input type="email" placeholder="Correo">
+      <input type="password" placeholder="Contraseña">
+      <button>Iniciar</button>
+    </div>
+    <div class="image-section"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Inicio</title>
+  <style>
+    body {
+      background-color: #d0f0c0; /* verde claro suave */
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #4CAF50;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    #perfil {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #btnInicio {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 20px 30px;
+      font-size: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #btnInicio:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EMPEZAR (˶˃ ᵕ ˂˶) .ᐟ.ᐟ</h1>
+    <img id="perfil" src="https://th.bing.com/th/id/R.a9feb445039d98622b929b6ea7681c4f?rik=L4CBz%2bUYyY4uuQ&riu=http%3a%2f%2fvignette2.wikia.nocookie.net%2fclubpenguin%2fimages%2fe%2fe7%2fNormal_Penguin112233.png%2frevision%2flatest%3fcb%3d20131225013811%26path-prefix%3des&ehk=Lqmszg1EAbsYahtApRkZFzD58VheL3Ycmry1pLTJRcw%3d&risl=&pid=ImgRaw&r=0" alt="Perfil">
+  </header>
+
+  <main>
+    <button id="btnInicio">&#10148;</button> <!-- flecha -->
+  </main>
+
+  <script>
+    const btnInicio = document.getElementById('btnInicio');
+    btnInicio.addEventListener('click', () => {
+      alert("¡Página iniciada!");
+    });
+  </script>
+
+</body>
+</html>
